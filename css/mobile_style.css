@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 900px) {
     html,
     body {
         background-color: #162832;
@@ -38,7 +38,7 @@
         width: 100%;
         justify-content: center;
         font-family: "Figtree", sans-serif;
-        font-size: 18pt;
+        font-size: 14pt;
         font-weight: bold;
     }
 
@@ -49,10 +49,10 @@
 
         background-color: #1b1f21;
 
-        min-width: 100pt;
-        min-height: 57.69pt;
-        max-width: 100pt;
-        max-height: 57.69pt;
+        min-width: 66.66pt;
+        min-height: 38.46pt;
+        max-width: 66.66pt;
+        max-height: 38.46pt;
 
         border: dashed;
         border-width: 0pt 2pt 0pt 2pt;
@@ -67,10 +67,10 @@
         justify-content: center;
         background-color: #1b1f21;
 
-        min-width: 100pt;
-        min-height: 57.69pt;
-        max-width: 100pt;
-        max-height: 57.69pt;
+        min-width: 66.66pt;
+        min-height: 38.46pt;
+        max-width: 66.66pt;
+        max-height: 38.46pt;
 
         margin-top: 5pt;
         box-shadow: 0px 10pt #0e0e0e;
@@ -82,10 +82,10 @@
         justify-content: center;
         background-color: #1b1f21;
 
-        min-width: 100pt;
-        min-height: 57.69pt;
-        max-width: 100pt;
-        max-height: 57.69pt;
+        min-width: 66.66pt;
+        min-height: 38.46pt;
+        max-width: 66.66pt;
+        max-height: 38.46pt;
 
         border: dashed;
         border-width: 0pt 2pt 0pt 2pt;
@@ -98,7 +98,7 @@
     #nav_fill {
         background-color: #1b1f21;
         width: 100%;
-        height: 57.69pt;
+        height: 38.46pt;
         flex-grow: 1;
         box-shadow: 0px 15pt #0e0e0e;
     }
@@ -125,6 +125,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        align-content: center;
         height: 100px;
         width: auto;
     }
@@ -145,7 +146,7 @@
 
     .platform_banner p {
         color: white;
-        font-size: 40pt;
+        visibility: hidden;
         font-weight: bold;
         font-family: "Figtree", sans-serif;
     }
@@ -153,7 +154,8 @@
     .game_display {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
+        align-items: center;
         background-repeat: repeat;
     }
 
@@ -167,13 +169,13 @@
         min-width: 50%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
 
     .game_display div p {
         max-width: 75%;
         margin: 5pt;
-        text-wrap: balance;
     }
 
     .game_display div a {

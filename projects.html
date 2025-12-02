@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Home · Pablo Quiñones Gonzalez</title>
+        <title>Games · Pablo Quiñones Gonzalez</title>
         <link rel="icon" type="image/x-icon" href="assets/bit.png" />
 
         <!-- Fonts -->
@@ -19,22 +19,34 @@
     <body>
         <nav class="navbar">
             <div id="nav_fill"></div>
-            <a href="games.html" class="no_decoration"
-                ><div id="unselected">Games</div></a
-            >
-            <img src="assets/bit.png" id="selected" />
-            <a href="projects.html" class="no_decoration">
-                <div id="unselected">Projects</div>
+            <a href="games.html" class="no_decoration">
+                <div id="unselected">Games</div>
+            </a>
+            <a href="index.html">
+                <img src="assets/bit.png" id="unselected" />
+            </a>
+            <a>
+                <div id="selected">Projects</div>
             </a>
             <div id="nav_fill"></div>
             <div></div>
         </nav>
 
-        <h1>Title</h1>
-        <p>Regular text</p>
+        <section class="project_display" id="dmg">
+            <div>
+                <img src="assets/projects/bitdmg/logo.svg" height="200pt" />
+                <p>Simple DMG Game Boy emulator.</p>
+                <p><strong>Platform:</strong> Windows, Linux</p>
+                <p><strong>Tools:</strong> SDL3, C++</p>
+            </div>
+        </section>
 
-        <footer class="footer" id="fix_footer">
-            <a href="https://thatbit.itch.io/" class="no_decoration">
+        <footer id="fix_footer">
+            <a
+                href="https://thatbit.itch.io/"
+                class="no_decoration"
+                style="width: 100%"
+            >
                 <div
                     class="platform_banner"
                     style="background-color: #fa5c5c; outline-color: #ffa6ae"
@@ -43,7 +55,11 @@
                     <p>Find my games on itch.io</p>
                 </div>
             </a>
-            <a href="https://github.com/ThatBit345" class="no_decoration">
+            <a
+                href="https://github.com/ThatBit345"
+                class="no_decoration"
+                style="width: 100%"
+            >
                 <div
                     class="platform_banner"
                     id="plat_rev"

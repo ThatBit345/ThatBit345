@@ -17,7 +17,6 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/desktop_style.css" />
-        <link rel="stylesheet" href="css/mobile_style.css" />
     </head>
     <body>
         <nav class="navbar">
@@ -30,32 +29,48 @@
                 <div id="unselected">Projects</div>
             </a>
             <div id="nav_fill"></div>
-            <div></div>
         </nav>
 
         <h1>Title</h1>
         <p>Regular text</p>
 
-        <footer class="footer" id="fix_footer">
-            <a href="https://thatbit.itch.io/" class="no_decoration">
-                <div
-                    class="platform_banner"
-                    style="background-color: #fa5c5c; outline-color: #ffa6ae"
-                >
-                    <img src="assets/logo_itchio.svg" width="78" />
-                    <p>Find my games on itch.io</p>
-                </div>
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming languajes: C#, C++, Javascript, GDScript</li>
+            <li>Engines: Unity, Godot</li>
+            <li>Tools: Affinity Designer 2, Blender, Substance 3D Painter</li>
+            <li>English: B1</li>
+        </ul>
+
+        <div id="platform_div">
+            <div id="platform_fill"></div>
+            <a
+                href="https://thatbit.itch.io"
+                class="platform_button"
+                style="--back: #fa5c5c; --shadow: #f82b2b"
+            >
+                <img src="assets/logo_itchio.svg" />
+                itch.io
             </a>
-            <a href="https://github.com/ThatBit345" class="no_decoration">
-                <div
-                    class="platform_banner"
-                    id="plat_rev"
-                    style="background-color: #5c81fa; outline-color: #a6beff"
-                >
-                    <img src="assets/logo_github.svg" width="78" />
-                    <p>Source code on GitHub</p>
-                </div>
+            <div id="platform_divider"></div>
+            <a
+                href="https://github.com/ThatBit345"
+                class="platform_button"
+                style="--back: #7a53df; --shadow: #5928d7"
+            >
+                <img src="assets/logo_github.svg" />
+                GitHub
             </a>
-        </footer>
+            <div id="platform_divider"></div>
+            <a
+                href="https://www.linkedin.com/in/pablo-qui%C3%B1ones-gonzalez-09131a376/"
+                class="platform_button"
+                style="--back: #0a66c2; --shadow: #0a0ac2"
+            >
+                <img src="assets/logo_linkedin.png" />
+                LinkedIn
+            </a>
+            <div id="platform_fill"></div>
+        </div>
     </body>
 </html>

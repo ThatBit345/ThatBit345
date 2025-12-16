@@ -1,4 +1,6 @@
 html {
+    height: 100%;
+
     --bg: #162832;
     --block-bg: #1b1f21;
     --block-shadow: #0e0e0e;
@@ -7,9 +9,10 @@ html {
 body {
     background-color: var(--bg);
     margin: 0;
-    height: 100%;
+    min-height: 100vh;
     font-family: "Inter", sans-serif;
     color: white;
+    position: relative;
 }
 
 h1 {
@@ -37,6 +40,14 @@ p {
         0px 2pt 10pt #0e0e0e;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Navigation bar */
 .navbar {
     display: flex;
     width: 100%;
@@ -97,12 +108,16 @@ p {
     box-shadow: 0px 15pt var(--block-shadow);
 }
 
+/* Platform buttons */
+/* PC Display */
 @media screen and (min-width: 1030px) {
     #platform_div {
         display: flex;
         flex-direction: row;
         align-content: center;
         justify-content: center;
+        position: absolute;
+        bottom: 10pt;
         width: 100%;
         height: 30pt;
     }
@@ -114,6 +129,7 @@ p {
     }
 }
 
+/* Mobile Display */
 @media screen and (max-width: 1030px) {
     #platform_div {
         display: flex;
@@ -176,6 +192,8 @@ p {
     height: 25pt;
 }
 
+/* Game display */
+/* PC Display */
 @media screen and (min-width: 1300px) {
     .game_display {
         width: 100%;
@@ -186,6 +204,7 @@ p {
     }
 }
 
+/* Mobile Display */
 @media screen and (max-width: 1300px) {
     .game_display {
         width: 100%;
@@ -204,6 +223,7 @@ p {
     margin: 20pt;
 }
 
+/* PC Display */
 @media screen and (min-width: 1300px) {
     .game_display div {
         min-width: 50%;
@@ -220,6 +240,7 @@ p {
     }
 }
 
+/* Mobile Display */
 @media screen and (max-width: 1300px) {
     .game_display div {
         min-width: 50%;
@@ -248,6 +269,7 @@ p {
     max-width: 100%;
 }
 
+/* Project display */
 .project_display {
     width: 100%;
     display: flex;
@@ -262,6 +284,7 @@ p {
     justify-content: center;
 }
 
+/* Individual game/project color schemes */
 #washi {
     background-image: url("../assets/projects/washi/bg.png");
     color: black;

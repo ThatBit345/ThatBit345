@@ -97,13 +97,36 @@ p {
     box-shadow: 0px 15pt var(--block-shadow);
 }
 
-#platform_div {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-    height: 30pt;
+@media screen and (min-width: 1030px) {
+    #platform_div {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 30pt;
+    }
+
+    .platform_button p {
+        font-weight: bold;
+        color: white;
+        margin-left: 5pt;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    #platform_div {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 30pt;
+    }
+
+    .platform_button p {
+        display: none;
+    }
 }
 
 #platform_fill {
@@ -140,9 +163,7 @@ p {
     background-color: var(--back);
     box-shadow: 0px 10pt var(--shadow);
 
-    font-weight: bold;
     text-decoration: none;
-    color: white;
 }
 
 .platform_button:hover {
@@ -153,14 +174,28 @@ p {
 
 .platform_button img {
     height: 25pt;
-    margin-right: 5pt;
 }
 
-.game_display {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    background-repeat: repeat;
+@media screen and (min-width: 1300px) {
+    .game_display {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        background-repeat: repeat;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .game_display {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: stretch;
+        background-repeat: repeat;
+    }
 }
 
 .game_display img {
@@ -169,17 +204,38 @@ p {
     margin: 20pt;
 }
 
-.game_display div {
-    min-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media screen and (min-width: 1300px) {
+    .game_display div {
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .game_display div p {
+        max-width: 75%;
+        margin: 5pt;
+        text-wrap: balance;
+    }
 }
 
-.game_display div p {
-    max-width: 75%;
-    margin: 5pt;
-    text-wrap: balance;
+@media screen and (max-width: 1300px) {
+    .game_display div {
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .game_display div p {
+        max-width: 75%;
+        margin: 5pt;
+        text-wrap: balance;
+        text-align: center;
+    }
 }
 
 .game_display div a {

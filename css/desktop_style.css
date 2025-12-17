@@ -40,6 +40,13 @@ p {
         0px 2pt 10pt #0e0e0e;
 }
 
+.spacer_depth {
+    background-color: var(--block-bg);
+    height: 10pt;
+    width: 100%;
+    box-shadow: 0px 5pt var(--block-shadow);
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -136,6 +143,8 @@ p {
         flex-direction: row;
         align-content: center;
         justify-content: center;
+        position: absolute;
+        bottom: 10pt;
         width: 100%;
         height: 30pt;
     }
